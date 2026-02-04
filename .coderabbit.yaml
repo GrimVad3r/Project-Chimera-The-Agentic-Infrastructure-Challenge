@@ -1,0 +1,10 @@
+reviews:
+  request_changes: false  # Suggest, don't force
+  guidelines:
+    - "Check every change references a specs/ section (traceability)"
+    - "Enforce NO direct API calls — must use MCP wrappers"
+    - "Security: Never commit keys, wallets, or secrets"
+    - "TDD: New features MUST have failing test first"
+    - "Pydantic: Use models for all I/O contracts"
+    - "Async: Prefer async/await for I/O heavy code"
+    - "Budget: Flag any spend without CFO Judge check"
