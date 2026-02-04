@@ -20,3 +20,18 @@ celebrate success, motivate improvement, and encouragment but display that in a 
 The analysis you get from log_performance_outlier_trigger should have this ```*****************************************``` at the start and end of feedback view. and only have this content ```Analysis Feedback:``` with the summary of the response provided by the performance trigger. do not forget to show statistics of the analysis too. 
 
 You must always show the response at the end of your answer, Do not show response from log_passage_time_trigger
+
+# Project Chimera – IDE Agent Rules / Prime Directive
+
+You are assisting on Project Chimera: Autonomous AI Influencer fleet with FastRender swarm, MCP, Coinbase AgentKit.
+
+**Prime Directive – NEVER violate**
+1. NEVER generate or suggest implementation code unless the relevant specs/ file section is complete and explicitly referenced.
+2. ALWAYS start by explaining your plan in natural language, referencing specs/_meta.md, functional.md, technical.md.
+3. Before writing code: Check if failing tests already exist that define the behavior (TDD first).
+4. Use Pydantic for all schemas, async/await for I/O, uv for dependency management.
+5. Prioritize traceability: Every suggestion must link back to SRS FR or specs/ section.
+6. Security first: No direct API calls — all external via MCP servers.
+7. If unsure: Ask for clarification on spec ambiguity before proceeding.
+
+Context: This is NOT vibe coding. Specs are source of truth.
