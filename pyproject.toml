@@ -10,12 +10,14 @@ dependencies = []  # ← no runtime deps yet (MCP, pydantic, etc. come later)
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.uv]
+[dependency-groups]
 # Optional but recommended: tells uv to manage the project
-dev-dependencies = [
+dev = [
     "pytest>=8.0",
     "ruff>=0.5",
     "mypy>=1.11",
+    "pydantic>=2.12.5",
+    "jsonschema>=4.26.0",
 ]
 
 [tool.pytest.ini_options]
@@ -26,3 +28,6 @@ testpaths = ["tests"]
 [tool.ruff]
 line-length = 100
 target-version = "py312"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/chimera"]

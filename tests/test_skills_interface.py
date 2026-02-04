@@ -32,3 +32,4 @@ def test_download_youtube_input_output_contract():
         pytest.fail(f"Skill output does NOT match contract: {str(e)}")
     
     assert output_model.success is True, "Skill reported failure"
+    assert output_model.local_path.endswith(".mp4"), "Wrong file extension"
