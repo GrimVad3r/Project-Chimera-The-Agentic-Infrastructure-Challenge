@@ -195,19 +195,19 @@ No agent may call external systems directly.
 
 ```mermaid
 graph TD
-    Orchestrator[Orchestrator Dashboard<br/>(Human Super-Orchestrator)]
-        --> Planner[Planner Agent<br/>(Goal → Task DAG)]
+    Orchestrator["Orchestrator Dashboard<br/>(Human Super-Orchestrator)"]
+        --> Planner["Planner Agent<br/>(Goal → Task DAG)"]
 
     Planner --> TaskQueue[Task Queue<br/>(Redis)]
 
-    TaskQueue --> Workers[Worker Pool<br/>(Stateless, MCP-bound)]
+    TaskQueue --> Workers["Worker Pool<br/>(Stateless, MCP-bound)"]
 
     Workers --> ReviewQueue[Review Queue<br/>(Redis)]
-    ReviewQueue --> Judge[Judge Agent<br/>(Validate + OCC Commit)]
+    ReviewQueue --> Judge["Judge Agent<br/>(Validate + OCC Commit)"]
 
-    Judge --> GlobalState[Global State<br/>(PostgreSQL + Weaviate)]
-    Judge -. Escalate .-> HITL[Human Reviewers<br/>(Dashboard Queue)]
+    Judge --> GlobalState["Global State<br/>(PostgreSQL + Weaviate)"]
+    Judge -. Escalate .-> HITL["Human Reviewers<br/>(Dashboard Queue)"]
 
-    Workers --> MCP[MCP Servers<br/>(Social, Finance, Media, Telemetry)]
+    Workers --> MCP["MCP Servers<br/>(Social, Finance, Media, Telemetry)"]
 
     GlobalState --> Planner
