@@ -103,7 +103,7 @@ See `specs/` for full details:
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/your-username/Project-Chimera-The-Agentic-Infrastructure-Challenge.git
+git clone https://github.com/GrimVad3r/Project-Chimera-The-Agentic-Infrastructure-Challenge.git
 cd Project-Chimera-The-Agentic-Infrastructure-Challenge
 
 # 2. Install uv (if not already installed)
