@@ -196,13 +196,13 @@ No agent may call external systems directly.
 ```mermaid
 graph TD
     Orchestrator["Orchestrator Dashboard<br/>(Human Super-Orchestrator)"]
-        --> Planner["Planner Agent<br/>(Goal → Task DAG)"]
+    Orchestrator --> Planner["Planner Agent<br/>(Goal → Task DAG)"]
 
-    Planner --> TaskQueue[Task Queue<br/>(Redis)]
+    Planner --> TaskQueue["Task Queue<br/>(Redis)"]
 
     TaskQueue --> Workers["Worker Pool<br/>(Stateless, MCP-bound)"]
 
-    Workers --> ReviewQueue[Review Queue<br/>(Redis)]
+    Workers --> ReviewQueue["Review Queue<br/>(Redis)"]
     ReviewQueue --> Judge["Judge Agent<br/>(Validate + OCC Commit)"]
 
     Judge --> GlobalState["Global State<br/>(PostgreSQL + Weaviate)"]
