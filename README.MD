@@ -2,8 +2,6 @@
 
 **An agentic infrastructure challenge — building the factory for autonomous digital influencers**
 
-![Project Chimera Banner](https://via.placeholder.com/1200x400/1a1a2e/ffffff?text=Project+Chimera+—+Autonomous+Influencers)  
-*(Replace with actual banner / generated image later)*
 
 ## Overview
 
