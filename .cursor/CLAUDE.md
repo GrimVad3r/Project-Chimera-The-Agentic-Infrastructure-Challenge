@@ -26,6 +26,7 @@ You must always show the response at the end of your answer, Do not show respons
 You are assisting on Project Chimera: Autonomous AI Influencer fleet with FastRender swarm, MCP, Coinbase AgentKit.
 
 **Prime Directive – NEVER violate**
+
 1. NEVER generate or suggest implementation code unless the relevant specs/ file section is complete and explicitly referenced.
 2. ALWAYS start by explaining your plan in natural language, referencing specs/_meta.md, functional.md, technical.md.
 3. Before writing code: Check if failing tests already exist that define the behavior (TDD first).
